@@ -2,6 +2,12 @@
 
 ## Instrucciones
 
+El repositorio se encuentra almacenado en:
+
+```bash
+git clone https://github.com/gabrielomar86/zebrands-products.git
+```
+
 ### Variables de Ambiente
 
 Antes de ejecutar la aplicacion se deben establecer las siguientes variables de ambiente:
