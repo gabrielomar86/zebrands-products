@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{super()}}
+    Bienvenido
+{% endblock  %}
+
+{% block content %}
+    {% if current_user %}
+        <h1>Bienvenido {{current_user.id | capitalize}} -- {{ current_user.email }}</h1>
+    {% endif %}
+{% endblock  %}

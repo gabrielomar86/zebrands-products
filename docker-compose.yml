@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  zebrands:
+    container_name: zebrands-container
+    image: zebrands-image:1.0.0
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+        - 5000:5000
+    restart: unless-stopped
+    environment:
+      - FLASK_APP=zebrand_product.py
+      - FLASK_DEBUG=1
+      - FLASK_ENV=production

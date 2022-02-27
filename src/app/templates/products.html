@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macros %}
+
+{% block title %}
+    {{super()}}
+    Productos
+{% endblock  %}
+
+{% block content %}
+    {{macros.render_products(products, current_user)}}
+{% endblock  %}
